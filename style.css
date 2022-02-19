@@ -1,0 +1,251 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  scroll-behavior: smooth;
+}
+body{
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  scroll-behavior: smooth;
+}
+a{
+  color:royalblue;
+  text-decoration: none;
+  outline: none;
+  transition: all .4s;
+}
+
+header{
+  background: #b8860b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+  ;
+  height: 40px;
+}
+#head-cont > div{
+  width: 190px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+} 
+#logo{
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: auto 5px;
+  border-radius: 50px;
+  object-fit: cover;
+  object-position:center;
+}
+
+#nav-cont{
+  width: 300px;
+  height: 30px;
+  margin: auto 0px;
+  padding: 10px;
+}
+#nav-cont > ul{
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+#nav > a{
+  color : black;
+}
+#nav > a:hover{
+    transform: scale(1.04);
+    color:#575a89;
+    text-shadow: floralwhite 0px 0px 1px;
+}
+h1{
+  font-size: 20px;
+}
+h2{
+  font-size: 14px;
+}
+p{
+  font-size: 14px;
+}
+section{
+  width: 500px;
+  margin: 40px 0;
+}
+#show{
+  width: 100%;
+  height: 500px;
+  display: inline-block;
+  justify-content: space-between;
+  position: relative;
+}
+#show::after{
+  content: '';
+  width: 100%;
+  height: 500px;
+  display: flex;
+  position: relative;
+  background-image: url('img/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: cover;
+  opacity: 0.2;
+}
+#over-show{
+  position: absolute;
+  display: inline-flex;
+}
+#show-img{
+  width: 50%;
+  height: 200px;
+  background-image: url('img/logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translate(60%, 80%);
+}
+#show-info{
+  width: 50%;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  padding:180px 30px;
+  margin: 0 0px 0 200px;
+  font-size: xx-larger;
+}
+
+#show-info > h1{
+  color: darkgoldenrod;
+  text-align: center;
+  font-size: 35px;
+  margin: 20px;
+}
+
+#articles, #about{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 31%);
+  row-gap: 30px;
+  column-gap: 3%;
+  padding: 2%;
+}
+
+#about > div{
+  width: 33%;
+}
+article > div {
+  width: 100%;
+}
+.art-info{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  text-align: justify;
+  padding: 10px;
+}
+.art-info > h2{
+  margin: 10px 0;
+}
+.art-img{
+  height: 250px;
+  width: 100%;
+ border: 0.9px solid #fff;
+ transition: all .4s;
+}
+.abt-img{
+  height: 250px;
+  width: 100%;
+  transition: all .4s;
+}
+.art-img:hover, .abt-img:hover{
+  transform: scale(1.02);
+}
+#about-cont{
+  width: 100%;
+}
+
+#about{
+  width: 100%;
+  display: flex;
+  justify-content:space-evenly;
+}
+
+#about > div{
+  
+  width: 23%;
+  border-radius: 20px;
+}
+#about > div:nth-child(even){
+  border: #b8860b 1px solid;
+}
+#about > div:nth-child(odd){
+  border: #575a89 1px solid;
+}
+#about > div > div >  img{
+border-radius: 10px;
+}
+#about-header{
+  text-align: center;
+  font-size: xx-large;
+  margin: 20px;
+}
+
+footer{
+  width: 100%;
+}
+
+.title{
+  color:#b8860b;
+  text-align: center;
+  margin: 20px;
+}
+#site-map > div {
+  display: flex;
+  flex-direction: column;
+}
+#site-map > div > nav{
+  background :#575a89;
+  height: 50px;
+  display: flex;
+  font-size: medium;
+  justify-content: center;
+  align-items: center;
+}
+#site-map > div > nav > ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+} 
+#site-map > div > nav > ul > a{
+  color: white;
+} 
+#site-map > div > nav > ul > a:hover{
+  transform: scale(1.14);
+  color:#b8860b;
+  text-shadow: #fff 0px 0px 1px;
+}
+#social-img  {
+  margin: 20px;
+}
+#social-img > div {
+  display: flex;
+  justify-content: space-evenly;
+}
+  i >img{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  #copy{
+  text-align: center;
+font-size: 20px;
+margin: 20px 0;
+}
